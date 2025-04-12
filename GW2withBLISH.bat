@@ -91,9 +91,13 @@ if "%AUTO_LOGIN%"=="-autologin" (
     echo !AUTO_LOGIN!
 ) > "%CONFIG_FILE%"
 echo Configuration saved.
-timeout /t 1 /nobreak >nul
+
+timeout /t 3 /nobreak >nul
 REM goto LAUNCH
 echo All done!
+echo You can start the game via the shortcut in the Guild Wars 2's path.
+echo Press any key to close this window.
+pause
 exit
 
 :LOAD_CONFIG
